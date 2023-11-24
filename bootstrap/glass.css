@@ -1,0 +1,23 @@
+#body {  
+    height: 100vh;  
+    display: flex;  
+    background-image: url(../img/bgi-l.jpg);  
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  
+    background-size: cover;  
+    overflow-y: hidden;  
+    overflow-x: hidden;  
+    backdrop-filter: blur(10px); /* 添加这一行来模糊背景图片 */  
+    transition: background-image 0.5s ease;
+}
+#glass {
+    background: rgba(255, 255, 255, .35);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+
+a,a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color:inherit;
+}

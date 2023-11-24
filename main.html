@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子酱主页 - 南锣子酱</title>
+    <link rel="stylesheet" href="./bootstrap/glass.css">
+    <link rel="stylesheet" href="./bootstrap/switchs.css">
+    <!-- <link rel="stylesheet" href="./bootstrap/dark.css"> -->
+    <link rel="icon" href="./img/ico.ico">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    
+    <script>
+        function handleKeyDown(event) {
+            if (event.keyCode === 13) {
+                search();
+            }
+        }
+
+        function search() {
+            var word = document.getElementById("input").value;
+            var url = "https://cn.bing.com/search?q=" + word;
+            window.open(url, '_blank');
+        }
+
+        function about() {
+            alert("本网站仅限于无锡技师学院C210软件技术与运用52101班使用！\n版本号：1.5.0\n更新日期：2023年11月24日")
+        }
+
+        function DarkMode() {
+            var body = document.getElementById("body");
+            var settingsButton = document.getElementById("settingsButton");
+            var label = document.querySelector(".switch-group label");
+
+            var btn = document.getElementById("cm");
+            var search = document.getElementById("input");
+            var searchbtn = document.getElementById("searchbtn");
+            var mainbg = document.getElementById("glass");
+            var settings = document.getElementById("settings");
+            var txt = document.getElementById("main");
+
+            var dark = "rgba(100,100,100,.5)";
+            var light = "rgba(255, 255, 255, .35)"
+            if (body.style.backgroundImage === '') {
+                // 当前为日间模式，切换至暗黑模式
+
+                mainbg.style.backgroundColor = dark;
+                search.style.backgroundColor = dark;
+                searchbtn.style.backgroundColor = dark;
+                searchbtn.style.borderLeft="2px solid black";
+                settings.style.backgroundColor = dark;
+                body.style.backgroundImage = 'url("./img/bgi-d.jpg")';
+                label.textContent = "日间模式";
+                btn.style.color = "#fff";
+                txt.style.color = "#fff";
+                settingsButton.src="./img/icon/sun.svg";
+                settingsButton.style.backgroundColor=dark;
+            } else {
+
+                // 当前为暗黑模式，切换回日间模式
+                mainbg.style.backgroundColor = light;
+                search.style.backgroundColor = light;
+                searchbtn.style.backgroundColor = light;
+                searchbtn.style.borderLeft="2px solid blue";
+                settings.style.backgroundColor = light;
+                body.style.backgroundImage = '';
+                label.textContent = "暗黑模式";
+                btn.style.color = "#000";
+                txt.style.color = "#000";
+                settingsButton.src="./img/icon/night.svg";
+                settingsButton.style.backgroundColor=light;
+            }
+        }
+    </script>
+</head>
+
+<body id="body">
+    <div style="position: absolute;bottom: 7%;right: 1%;width: 15rem;height: 15rem;border: 0;border-radius: 20px;background-color: #ffffff7f;z-index: 500;display: none;"
+        id="settings">
+        <div class="container">
+            <div class="switch-group">
+                <label for="darkModeSwitch" style="padding-bottom:3rem; ;width: 100%;border-bottom: 1px solid pink;"
+                    id="cm" onclick="DarkMode()">暗黑模式</label>
+            </div>
+            <div class="switch-group">
+                <label for="memoryModeSwitch" style="margin: 0;color: #7f7f7f;">敬请期待</label>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; height: 100%; top: 0; left:0; position: absolute;">
+        <div style="width: 100%; height:60%;">
+            <p
+                style="width: 100%; height: 50%; text-align: center; font-size: 7rem; margin: 0; display: flex; justify-content: center; align-items: flex-end;">
+                <img src="./img/logo.png" alt="" height="70%" onclick="about()">
+            </p>
+            <div style="display: flex;justify-content: center;border:0;height: 50%;align-items: center;">
+                <input type="text" placeholder="键入以此来搜索" id="input" onkeydown="handleKeyDown(event)"
+                    style="height: 6rem;font-size: 2.5rem; width: 650px;border: 0;border-right: 0; border-radius: 100px 0 0 100px; padding: 5px; padding-left: 20px;outline: none;background: rgba(255, 255, 255, .35);">
+                <img src="./img/icon/search.svg" alt="搜索" id="searchbtn"
+                    style="border: 0;border-left: 2px solid blue;border-radius: 0 100% 100% 0; padding: 5px;height: 6rem;background: rgba(255, 255, 255, .35);"
+                    onclick="search()">
+            </div>
+        </div>
+        <div id="main"
+            style="border: 0;width: 100%;height: 40%;position: absolute;bottom: 0;display: flex;justify-content: center;align-items: start;">
+            <div style="width: 70%;border: 0;border-radius: 25px;" id="glass">
+                <div style=" width: 100%;height: 100%;padding: 10px;">
+                    <div>
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <div style="text-align: center">
+                                    <p style="font-size: 3rem;padding-left: 5px;margin-bottom: 0;">视频网页</p>
+                                    <hr style="border: 0;height: 2px;background-color: rgb(16, 16, 16);margin-top: 0;">
+                                    <div class="row clearfix">
+                                        <div class="col-md-3 column">
+                                            <a href="https://www.bilibili.com">
+                                                <h3>
+                                                    <img style="margin-bottom: 1.5rem;" src="./img/icon/bilibili.svg"
+                                                        alt="" width="30%">
+                                                    <p>哔哩哔哩</p>
+                                                </h3>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 column">
+                                            <a href="https://v.qq.com">
+                                                <h3>
+                                                    <img style="margin-bottom: 1.5rem;" src="./img/icon/vTencent.svg"
+                                                        alt="" width="30%">
+                                                    <p>腾讯视频</p>
+                                                </h3>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-md-3 column">
+                                            <a href="https://iqiyi.com">
+                                                <h3>
+                                                    <img style="margin-bottom: 1.5rem;" src="./img/icon/iqiyi.png"
+                                                        alt="" width="29%">
+                                                    <p>爱奇艺</p>
+                                                </h3>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 column">
+                                            <a href="https://www.cbportal.org">
+                                                <h3>
+                                                    <img style="margin-bottom: 1.5rem;" src="./img/icon/cupfox.png"
+                                                        alt="" width="30%">
+                                                    <p>cupfox</p>
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="./img/icon/night.svg" alt="" height="5%"
+        style="border: 2px solid black;border-radius: 100px;margin: 1%;padding: 5px;background-color: #fff;;position: absolute;bottom: 0;right: 0;" id="settingsButton" onclick="DarkMode()" title="颜色模式切换">
+</body>
