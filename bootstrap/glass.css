@@ -9,6 +9,7 @@
     overflow-x: hidden;  
     backdrop-filter: blur(10px); /* 添加这一行来模糊背景图片 */  
     transition: background-image 0.5s ease;
+    user-select: none;
 }
 #glass {
     background: rgba(255, 255, 255, .35);
