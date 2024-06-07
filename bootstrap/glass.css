@@ -1,42 +1,95 @@
-#body {  
-    height: 100vh;  
-    display: flex;  
+#body {
+    height: 100vh;
+    display: flex;
     /* background-image: url("https://z1.ax1x.com/2023/11/26/pi00rGR.jpg");   */
     background-image: url("https://api.paugram.com/bing/");
-    background-repeat: no-repeat;  
-    background-attachment: fixed;  
-    background-size: cover;  
-    overflow-y: hidden;  
-    overflow-x: hidden;  
-    backdrop-filter: blur(10px); /* 添加这一行来模糊背景图片 */  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    backdrop-filter: blur(10px);
+    /* 添加这一行来模糊背景图片 */
     transition: background-image 0.5s ease;
     user-select: none;
     font-family: 仿宋;
-    
+
 }
+
 #glass {
     background: rgba(255, 255, 255, .35);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 
-a,a:link,a:visited,a:hover,a:active{
-    color:inherit;
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
     list-style: none;
-    text-decoration: none; /* 去除默认的下划线 */
-	outline: none;	/* 去除旧版浏览器的点击后的外虚线框 */
-	color: #000;	/* 去除默认的颜色和点击后变化的颜色 */ 
+    text-decoration: none;
+    /* 去除默认的下划线 */
+    outline: none;
+    /* 去除旧版浏览器的点击后的外虚线框 */
+    color: #000;
+    /* 去除默认的颜色和点击后变化的颜色 */
 }
-.UnVisit{
+
+.UnVisit {
     filter: grayscale(100%);
     cursor: not-allowed;
-    
+
 }
-.CopyRight{
+
+.CopyRight {
     position: absolute;
     bottom: 1vh;
     width: 100%;
     text-align: center;
     color: rgb(0, 0, 0);
 }
+
+.logo {
+    padding: 1vw;
+    -webkit-user-drag: none;
+    border: .5vw solid rgba(200, 200, 200, 0.5);
+    border-radius: 50px;
+    
+}
+
+
+.SearchBox {
+    height: 6rem;
+    font-size: 2.5rem;
+    width: 650px;
+    border: 0;
+    border-right: 0;
+    border-radius: 100px 0 0 100px;
+    padding: 5px;
+    padding-left: 20px;
+    outline: none;
+    background: rgba(255, 255, 255, .35);
+}
+
+.SearchButton {
+    border: 0;
+    border-left: 2px solid rgb(150, 150, 150);
+    border-radius: 0 100% 100% 0;
+    padding: 5px;
+    height: 6rem;
+    background: rgba(255, 255, 255, .35);
+}
+@keyframes logoAnimation {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
