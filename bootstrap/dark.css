@@ -1,7 +1,0 @@
-.dark-mode {
-    background-image: url("../img/bgi-d.jpg"); /* 设置暗黑模式的背景图片 */
-  }
-  
-  .dark-mode .switch-group label {
-    color: #fff; /* 设置暗黑模式下开关标签的文字颜色为白色 */
-  }

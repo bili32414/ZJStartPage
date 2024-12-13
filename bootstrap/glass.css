@@ -1,6 +1,8 @@
 #body {
     height: 100vh;
     display: flex;
+    padding: 0;
+    margin: 0;
     /* background-image: url("https://z1.ax1x.com/2023/11/26/pi00rGR.jpg");   */
     background-image: url("https://api.paugram.com/bing/");
     background-repeat: no-repeat;
@@ -22,6 +24,18 @@
     backdrop-filter: blur(10px);
 }
 
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#search {
+    display: flex;
+}
 
 a,
 a:link,
@@ -44,27 +58,34 @@ a:active {
 
 }
 
-.CopyRight {
-    position: absolute;
-    bottom: 1vh;
-    width: 100%;
+#CopyRight {
     text-align: center;
     color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;/
+    /* text-align: center; */
 }
 
-.logo {
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+#logoimg {
     padding: 1vw;
     -webkit-user-drag: none;
-    border: .5vw solid rgba(200, 200, 200, 0.5);
-    border-radius: 50px;
-    
+    /* border: .5vw solid rgba(200, 200, 200, 0.5); */
+    /* border-radius: 50px; */
+
 }
 
 
-.SearchBox {
-    height: 6rem;
-    font-size: 2.5rem;
-    width: 650px;
+#SearchBox {
+    font-size: 1.5rem;
+    min-width: 300px;
+    width: 50vw;
     border: 0;
     border-right: 0;
     border-radius: 100px 0 0 100px;
@@ -74,22 +95,68 @@ a:active {
     background: rgba(255, 255, 255, .35);
 }
 
-.SearchButton {
+#SearchButton {
     border: 0;
-    border-left: 2px solid rgb(150, 150, 150);
     border-radius: 0 100% 100% 0;
-    padding: 5px;
-    height: 6rem;
+    padding: 10px;
     background: rgba(255, 255, 255, .35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@keyframes logoAnimation {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-      transform: translate(-50%, -50%) scale(1.5);
-    }
-    100% {
-      transform: translate(0, 0) scale(1);
-    }
-  }
+
+#recWeb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50vw;
+    padding: 30px;
+    font-size: larger;
+    flex-wrap: wrap;
+
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .35);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.icon {
+    margin: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#recWebC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#searchform{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.searchform_a{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin: 5px;
+}
+.searchform_c{
+    background-color: rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    padding: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin: 5px;
+}
+.searchform_c:hover{
+    background-color: rgba(255, 255, 255, .15);
+    cursor: pointer;
+}
