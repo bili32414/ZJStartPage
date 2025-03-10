@@ -5,48 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>子酱起始页</title>
-    <link rel="stylesheet" href="./bootstrap/glass.css">
-    
-    <link rel="icon" href="./img/ico.ico">
+
+    <link rel="icon" href="" id="ico">
+    <link rel="stylesheet" href="./bootstrap/main.css?v=2.1.2">
+    <link rel="stylesheet" href="./bootstrap/glass.css?v=2.1.2">
 
 </head>
 
 <body id="body">
     <div id="main">
         <div id="logo">
-            <img src="https://z1.ax1x.com/2023/06/19/pC1BYHH.png" alt="" width="20%" id="logoimg">
+            <!-- <img src="https://z1.ax1x.com/2023/06/19/pC1BYHH.png" alt="" width="20%" id="logoimg"> -->
+            <img src="./img/icon/edge.svg" alt="" width="50%" id="logoimg" onclick="DarkMode()">
         </div>
         <div id="recWeb">
             <div id="recWebC">
-                <img src="./img/icon/bilibili.svg" alt="" width="100vw" class="icon" onclick="window.open('https://www.bilibili.com/')">
+                <img src="./img/icon/bilibili.svg" alt="" width="100vw" class="icon"
+                    onclick="window.open('https://www.bilibili.com/')">
                 <div style="display: flex;flex-direction: column;">
                     <span>BiliBili</span>
                     <img src="./img/icon/bigvip.webp" alt="" height="20px" onclick="showbigvip()">
                 </div>
             </div>
             <div id="recWebC">
-                <img src="./img/icon/vTencent.svg" alt="" width="100vw" class="icon" onclick="window.open('https://v.qq.com/')">
+                <img src="./img/icon/vTencent.svg" alt="" width="100vw" class="icon"
+                    onclick="window.open('https://v.qq.com/')">
                 <span>腾讯视频</span>
             </div>
             <div id="recWebC">
-                <img src="./img/icon/iqiyi.png" alt="" width="100vw" class="icon" onclick="window.open('https://www.iqiyi.com/')">
+                <img src="./img/icon/iqiyi.png" alt="" width="100vw" class="icon"
+                    onclick="window.open('https://www.iqiyi.com/')">
                 <span>爱奇艺</span>
             </div>
         </div>
         <div id="searchitems">
+            <div id="searchform">
+                <div id="ssy_prc" class="searchform_a" onclick="switchSearchType(0)">国内版(CN)</div>
+                <div id="ssy_www" class="searchform_c" onclick="switchSearchType(1)">国际版(EN)</div>
+            </div>
             <div id="search">
                 <input type="text" id="SearchBox">
-                <button id="SearchButton" onclick="SearchFromBing(document.getElementById('SearchBox').value)"><img
-                    src="./img/icon/search.svg" alt="" height="30px" width="30px"></button>
-                </div>
-                <div id="searchform">
-                    <div id="ssy_prc" class="searchform_a" onclick="switchSearchType(0)">国内版(CN)</div>
-                    <div id="ssy_www" class="searchform_c" onclick="switchSearchType(1)">国际版(EN)</div>
-                </div>
+                <button id="SearchButton" onclick="SearchFromBing(document.getElementById('SearchBox').value,0)"><img
+                        src="./img/icon/search.svg" alt="" height="30px" width="30px"></button>
+                <button id="deepsearch" onclick="SearchFromBing(document.getElementById('SearchBox').value,1)"><img
+                        src="./img/deepsearch.png" alt="" width="28px">
+                    <ds style="display: flex;flex-direction: column;">
+                        <p class="ds">深度搜索</p>
+                        <p class="ds smaller">仅国内</p>
+                    </ds>
+                </button>
+            </div>
         </div>
         <div id="CopyRight">
-            <span>Copyright 2024 @南锣子酱 v2.0</span>
-            <span>壁纸来自Bing每日壁纸 <a onclick="window.open('https://api.paugram.com/bing/')" style="color:coral">查看壁纸</a></span>
+            <span>Copyright 2025 @南锣子酱 v2.1.2</span>
+            <!-- <span>壁纸来自Bing每日壁纸 <a onclick="window.open('https://api.paugram.com/bing/')"
+                    style="color:coral">查看壁纸</a></span> -->
         </div>
     </div>
 
@@ -64,4 +77,4 @@
 </script>
 
 </html>
-<script src="./bootstrap/main.js"></script>
+<script src="./bootstrap/main.js?v=2.1.2"></script>
