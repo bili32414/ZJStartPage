@@ -2,23 +2,23 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="36.5" y1="40" x2="36.5" y2="9.6539" gradientTransform="matrix(1 0 0 -1 0 66)">
-	<stop  offset="0" style="stop-color:#000"/>
-	<stop  offset="1" style="stop-color:#bbb"/>
+	<stop  offset="0" style="stop-color:#183955"/>
+	<stop  offset="1" style="stop-color:#573E7C"/>
 </linearGradient>
 <path style="fill:url(#SVGID_1_);" d="M52.25,44c-0.154,0-0.365,0.084-0.492,0.15c-0.331,0.173-0.345,0.241-1.073,0.548
 	C49.394,45.244,46.898,46,42.984,46c-6.93,0-11.859-2.922-14.734-6.625C26.055,36.548,26,33.625,26,32c0-3.314,2.686-6,6-6
 	c-2.125,0-3.873,0.378-5.75,1.75C23,30.125,20,34.521,20,40.532c0,10.09,8.703,17.391,18.522,15.521
 	c6.384-1.843,11.874-6.157,14.399-10.968c0,0,0.079-0.145,0.079-0.335C53,44.336,52.664,44,52.25,44z"/>
 <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="32.0125" y1="59" x2="32.0125" y2="26" gradientTransform="matrix(1 0 0 -1 0 66)">
-	<stop  offset="0" style="stop-color:#000"/>
-	<stop  offset="1" style="stop-color:#bbb"/>
+	<stop  offset="0" style="stop-color:#183955"/>
+	<stop  offset="1" style="stop-color:#573E7C"/>
 </linearGradient>
 <path style="fill:url(#SVGID_2_);" d="M32.479,7C18.372,7,7.543,17.657,7.025,31h0.109c0.66-5.379,4.328-12,15.366-12
 	c7.75,0,12.25,3.75,14.125,7.125C38.168,28.903,38,32,38,32c0,2.859-2,5-2,5s0.328,3,8,3c8,0,13-5,13-12C57,16,46.286,7,32.479,7z"
 	/>
 <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="32" y1="6.9431" x2="32" y2="58.4678" gradientTransform="matrix(1 0 0 -1 0 66)">
-	<stop  offset="0" style="stop-color:#000"/>
-	<stop  offset="1" style="stop-color:#bbb"/>
+	<stop  offset="0" style="stop-color:#220520"/>
+	<stop  offset="1" style="stop-color:#041C32"/>
 </linearGradient>
 <path style="fill:url(#SVGID_3_);" d="M35.006,37.108C35.072,37.421,35.672,41,44,41c8.374,0,14-5.225,14-13
 	C58,15.458,47.028,6,32.479,6C17.631,6,6,17.421,6,32c0,14.337,11.663,26,26,26c8.849,0,18.02-5.236,21.798-12.435

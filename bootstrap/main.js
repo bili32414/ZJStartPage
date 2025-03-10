@@ -1,5 +1,5 @@
 /* 
-Version:2.1.2
+Version:2.1.3
 上次更新:2025年3月10日
  */
 
@@ -51,6 +51,10 @@ function switchSearchType(type) {
     Bwww = !Bwww;
 
 
+}
+
+function jump(url) {
+    setTimeout(function () { window.open('https://'+url+'.com', "_blank"); }, 500);
 }
 
 
