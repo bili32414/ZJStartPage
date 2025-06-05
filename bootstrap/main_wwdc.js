@@ -77,17 +77,17 @@ function jump(url) {
 //             localStorage.setItem("darkMode", "F");
 //         }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const loadingImg = document.getElementById('loadingimg');
-    const timestamp = new Date().getTime(); // 获取当前时间戳
-    loadingImg.src = './img/legion_zone.gif?' + timestamp; // 添加时间戳作为查询参数
+// document.addEventListener('DOMContentLoaded', function() {
+//     const loadingImg = document.getElementById('loadingimg');
+//     const timestamp = new Date().getTime(); // 获取当前时间戳
+//     loadingImg.src = './img/legion_zone.gif?' + timestamp; // 添加时间戳作为查询参数
 
-    // 三秒后隐藏加载动画
-    setTimeout(() => {
-        const loading = document.getElementById('loading');
-        loading.style.opacity = 0; // 开始淡出
-        setTimeout(() => {
-            loading.style.display = 'none'; // 淡出完成后隐藏
-        }, 500); // 确保淡出动画完成
-    }, 3000); // 三秒后触发淡出
-});
+//     // 三秒后隐藏加载动画
+//     setTimeout(() => {
+//         const loading = document.getElementById('loading');
+//         loading.style.opacity = 0; // 开始淡出
+//         setTimeout(() => {
+//             loading.style.display = 'none'; // 淡出完成后隐藏
+//         }, 500); // 确保淡出动画完成
+//     }, 3000); // 三秒后触发淡出
+// });
