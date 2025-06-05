@@ -58,24 +58,24 @@ function jump(url) {
 }
 
 
-function DarkMode(){
+// function DarkMode(){
         // document.body.style.backgroundImage='linear-gradient(45deg,rgb(86, 67, 80) 0%,rgb(59, 68, 82) 100%)';
         document.body.style.color="white";
         document.getElementById("CopyRight").style.color="white";
         document.getElementById("recWeb").style.backgroundColor="#55555580";
         localStorage.setItem("darkMode", "T");
-        darkmode=true;
-}
+        // darkmode=true;
+// }
 
-const isDarkMode = localStorage.getItem("darkMode") === "T";
+// const isDarkMode = localStorage.getItem("darkMode") === "T";
 
-        // 如果darkMode为true，启用暗色模式
-        if (isDarkMode) {
-            DarkMode();
-        } else {
-            // 如果没有获取到darkMode状态，设置默认值为false
-            localStorage.setItem("darkMode", "F");
-        }
+//         // 如果darkMode为true，启用暗色模式
+//         if (isDarkMode) {
+//             DarkMode();
+//         } else {
+//             // 如果没有获取到darkMode状态，设置默认值为false
+//             localStorage.setItem("darkMode", "F");
+//         }
 
 document.addEventListener('DOMContentLoaded', function() {
     const loadingImg = document.getElementById('loadingimg');
