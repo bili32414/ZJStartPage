@@ -1,6 +1,6 @@
 /* 
-Version:2.1.3
-上次更新:2025年3月10日
+Version:2.2.2
+上次更新:2025年6月15日
  */
 #body {
     height: 100vh;
@@ -10,9 +10,9 @@ Version:2.1.3
     /* background-image: url("https://z1.ax1x.com/2023/11/26/pi00rGR.jpg");   */
     /* background-image: linear-gradient(45deg, #fbc2eb 0%, #a6c1ee 100%); */
     /* background-image: url("https://api.paugram.com/bing/");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-attachment: fixed;
-    background-size: cover; */
+    background-size: cover;
     overflow-y: hidden;
     overflow-x: hidden;
     background-image: url(../img/back.png);
@@ -21,6 +21,7 @@ Version:2.1.3
     transition: background-image 0.5s ease;
     user-select: none;
     font-family: 仿宋;
+    overflow: hidden;
 
 }
 
@@ -125,7 +126,7 @@ a:active {
     height: 30%;
     display: flex;
     justify-content: center;
-    animation: logodh 3s ease;
+    animation: logodh 4s ease;
 }
 
 @keyframes logodh {
@@ -134,11 +135,13 @@ a:active {
         height: 100%;
         opacity: 0;
     }
-50% {
+
+    50% {
         width: 100%;
         height: 100%;
         opacity: 1;
-}
+    }
+
     100% {
         width: 30%;
         height: 30%;
@@ -156,13 +159,13 @@ a:active {
 @keyframes edge {
     from {
         opacity: 0;
-        width: 0;
+        width: 100%;
         transform: rotate(0deg);
     }
 
     to {
         opacity: 1;
-        width: 50%;
+        width: 100%;
         transform: rotate(360deg);
     }
 }
@@ -175,14 +178,14 @@ a:active {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid rgb(0, 0, 0);
+    border: 0px solid rgb(0, 0, 0);
     width: 60vw;
     padding: 30px;
     font-size: larger;
     flex-wrap: wrap;
 
     border-radius: 25px;
-    background: rgba(255, 255, 255, .35);
+    background: rgba(255, 255, 255, .2);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     animation: jj 4s ease;
@@ -192,16 +195,23 @@ a:active {
     0% {
         opacity: 0;
     }
-50%{
-    opacity: 0;
-}
+
+    50% {
+        opacity: 0;
+    }
+
     100% {
         opacity: 1;
     }
-    
+
 }
-#searchitems{
-    animation: jj 3.5s ease;
+
+#times {
+    height: 100%;
+}
+
+#searchitems {
+    animation: jj 5s ease;
 }
 
 
@@ -215,14 +225,14 @@ a:active {
     padding: 11px;
     padding-left: 20px;
     outline: none;
-    background: rgba(255, 255, 255, .35);
+    background: rgba(255, 255, 255, .2);
 }
 
 #SearchButton {
     border: 0;
     border-radius: 0 100% 100% 0;
     padding: 10px;
-    background: rgba(255, 255, 255, .35);
+    background: rgba(255, 255, 255, .2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,7 +295,7 @@ a:active {
     flex-direction: row;
     align-items: center;
 
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.35);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
@@ -323,3 +333,4 @@ ds {
         /* 缩放比例 */
     }
 }
+

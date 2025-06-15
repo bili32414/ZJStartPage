@@ -1,6 +1,6 @@
 /* 
-Version:2.1.3
-上次更新:2025年3月10日
+Version:2.2.2
+上次更新:2025年6月15日
  */
 
 var Bwww = false;
@@ -14,7 +14,7 @@ var CN_Dsearch = "&shm=cr&form=DEEPSH&shajax=1"
 var darkmode=false;
 function SearchFromBing(keys, ds) {
     console.log(ds);
-    if (keys == "") {
+    if (keys == "" || keys == "输入搜索内容以搜索") {
         document.getElementById("SearchBox").value = "输入搜索内容以搜索";
         document.getElementById("SearchBox").style.color = "red";
         setTimeout(function () { document.getElementById("SearchBox").value = ""; 
@@ -61,9 +61,9 @@ function jump(url) {
 // function DarkMode(){
         // document.body.style.backgroundImage='linear-gradient(45deg,rgb(86, 67, 80) 0%,rgb(59, 68, 82) 100%)';
         document.body.style.color="white";
-        document.getElementById("CopyRight").style.color="white";
-        document.getElementById("recWeb").style.backgroundColor="#55555580";
-        localStorage.setItem("darkMode", "T");
+        // document.getElementById("CopyRight").style.color="white";
+        // document.getElementById("recWeb").style.backgroundColor="#55555580";
+        // localStorage.setItem("darkMode", "T");
         // darkmode=true;
 // }
 
@@ -77,17 +77,3 @@ function jump(url) {
 //             localStorage.setItem("darkMode", "F");
 //         }
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const loadingImg = document.getElementById('loadingimg');
-//     const timestamp = new Date().getTime(); // 获取当前时间戳
-//     loadingImg.src = './img/legion_zone.gif?' + timestamp; // 添加时间戳作为查询参数
-
-//     // 三秒后隐藏加载动画
-//     setTimeout(() => {
-//         const loading = document.getElementById('loading');
-//         loading.style.opacity = 0; // 开始淡出
-//         setTimeout(() => {
-//             loading.style.display = 'none'; // 淡出完成后隐藏
-//         }, 500); // 确保淡出动画完成
-//     }, 3000); // 三秒后触发淡出
-// });
